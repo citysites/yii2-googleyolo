@@ -70,8 +70,10 @@ class GoogleYoloWidget extends Widget
                 'googleyolo://id-and-password'
             ],
             'supportedIdTokenProviders' => [
-                'uri' => 'https://accounts.google.com',
-                'clientId' => $this->clientId
+                [
+                    'uri' => 'https://accounts.google.com',
+                    'clientId' => $this->clientId
+                ]
             ],
             'context' => self::CONTEXT_SIGNIN
         ], $this->retrieveConfig);
@@ -89,8 +91,10 @@ class GoogleYoloWidget extends Widget
         $this->hintConfig = ArrayHelper::merge([
             'supportedAuthMethods' => ['https://accounts.google.com'],
             'supportedIdTokenProviders' => [
-                'uri' => 'https://accounts.google.com',
-                'clientId' => $this->clientId
+                [
+                    'uri' => 'https://accounts.google.com',
+                    'clientId' => $this->clientId
+                ]
             ],
             'context' => self::CONTEXT_SIGNIN
         ], $this->hintConfig);

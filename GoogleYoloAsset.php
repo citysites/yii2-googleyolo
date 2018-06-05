@@ -10,8 +10,6 @@ class GoogleYoloAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/bmwx591/yii2-googleyolo';
 
-    public $publishOptions = [];
-
     public $jsOptions = [
         'position' => View::POS_HEAD
     ];
