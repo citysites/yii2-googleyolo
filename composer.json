@@ -1,0 +1,29 @@
+{
+  "name": "bmwx591/yii2-googleyolo",
+  "type": "yii2-extension",
+  "description": "The Google Yolo authorization integration for Yii2 framework",
+  "keywords": ["yii2", "google", "yolo"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Aslanov",
+      "email": "bumerx591@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "google/apiclient": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "bmwx591\\googleyolo\\": ""
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
