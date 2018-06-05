@@ -6,6 +6,7 @@ use yii\base\InvalidConfigException;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
+use yii\web\View;
 
 /**
  * Class GoogleYoloWidget
@@ -45,7 +46,7 @@ class GoogleYoloWidget extends Widget
     public function run()
     {
         GoogleYoloAsset::register($this->getView());
-        return $this->renderWidget();
+        $this->renderWidget();
     }
 
     private function renderWidget()
@@ -55,7 +56,7 @@ class GoogleYoloWidget extends Widget
             'retrieveConfig' => $this->retrieveConfig,
             'hintConfig' => $this->hintConfig,
         ]);
-        $this->getView()->registerJs("new GoogleYolo($config);");
+        $this->getView()->registerJs("new GoogleYolo($config);", View::POS_BEGIN);
     }
 
     /**
