@@ -45,7 +45,7 @@ class GoogleYoloWidget extends Widget
     public function run()
     {
         GoogleYoloAsset::register($this->getView());
-        $this->renderWidget();
+        return $this->renderWidget();
     }
 
     private function renderWidget()
