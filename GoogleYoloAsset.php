@@ -7,7 +7,7 @@ use yii\web\AssetBundle;
 
 class GoogleYoloAsset extends AssetBundle
 {
-    public $sourcePath = '/';
+    public $sourcePath = '@vendor/bmwx591/yii2-googleyolo';
 
     public $js = [
         'https://smartlock.google.com/client',
