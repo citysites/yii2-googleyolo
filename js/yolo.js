@@ -11,11 +11,11 @@ const GoogleYolo = function (options) {
         const hintPromise = function () {
             googleyolo.hint(options.hintConfig).then(
                 function(credential) {
-                    const stringCredential = JSON.stringify({type: 'credential', credential});
-                    messageParent(stringCredential);
+                    const stringCredential = JSON.stringify(credential);
+                    messageParent({type: 'credential', stringCredential});
                 }, function(error) {
-                    const stringError = JSON.stringify({type: 'error', error});
-                    messageParent(stringError);
+                    const stringError = JSON.stringify(error);
+                    messageParent({type: 'error', stringError});
                 }
             );
         };
@@ -23,8 +23,8 @@ const GoogleYolo = function (options) {
         if (options.allowedRetrieve) {
             googleyolo.retrieve(options.retrieveConfig).then(
                 function (credential) {
-                    const stringCredential = JSON.stringify({type: 'credential', credential});
-                    messageParent(stringCredential);
+                    const stringCredential = JSON.stringify(credential);
+                    messageParent({type: 'credential', stringCredential});
                 },
                 function (error) {
                     if ('noCredentialsAvailable' === error.type) {
