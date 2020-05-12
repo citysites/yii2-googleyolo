@@ -1,5 +1,5 @@
 {
-  "name": "bmwx591/yii2-googleyolo",
+  "name": "citysites/yii2-googleyolo",
   "type": "yii2-extension",
   "description": "The Google Yolo authorization integration for Yii2 framework",
   "keywords": ["yii2", "google", "yolo"],
