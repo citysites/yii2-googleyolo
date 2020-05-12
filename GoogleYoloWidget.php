@@ -1,6 +1,6 @@
 <?php
 
-namespace bmwx591\googleyolo;
+namespace citysites\googleyolo;
 
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
@@ -10,7 +10,7 @@ use yii\web\View;
 
 /**
  * Class GoogleYoloWidget
- * @package bmwx591\googleyolo
+ * @package citysites\googleyolo
  *
  * @see https://developers.google.com/identity/one-tap/web/overview
  */

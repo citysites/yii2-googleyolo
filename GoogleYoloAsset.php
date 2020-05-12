@@ -1,6 +1,6 @@
 <?php
 
-namespace bmwx591\googleyolo;
+namespace citysites\googleyolo;
 
 
 use yii\web\AssetBundle;
@@ -8,7 +8,7 @@ use yii\web\View;
 
 class GoogleYoloAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/bmwx591/yii2-googleyolo';
+    public $sourcePath = '@vendor/citysites/yii2-googleyolo';
 
     public $jsOptions = [
         'position' => View::POS_HEAD
